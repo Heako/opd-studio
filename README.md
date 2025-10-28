@@ -1,25 +1,25 @@
 # OPD Core — Open Portable Document
 
-> Format ouvert, web-native, signé et accessible pour remplacer progressivement le PDF dans les usages numériques.
+> An open, web-native, signed, and accessible document format designed to progressively replace PDF in digital workflows.
 
 ## 🎯 Vision
 
-Créer un format de document :
-- **Ouvert** : Spécification publique, pas de brevets
-- **Web-native** : HTML/CSS/JS, fonctionne dans tous les navigateurs
-- **Signé** : Intégrité cryptographique (Ed25519)
-- **Accessible** : Conforme WCAG 2.1 AA, lisible par les IA
-- **Portable** : Un seul fichier `.opd.zip` auto-contenu
+Create a document format that is:
+- **Open** : Public specification, no patents
+- **Web-native** : HTML/CSS/JS, works in all browsers
+- **Signed** : Cryptographic integrity (Ed25519)
+- **Accessible** : WCAG 2.1 AA compliant, AI-readable
+- **Portable** : Single self-contained `.opd.zip` file
 
-## 🚀 Démarrage rapide
+## 🚀 Quick Start
 
-### 🌐 Essayer en ligne
+### 🌐 Try it Online
 
-**OPD Studio** (Convertisseur DOCX → OPD) : https://opd-core-6ojjizaow-heakos-projects.vercel.app
+**OPD Studio** (DOCX → OPD Converter): https://opd-core-6ojjizaow-heakos-projects.vercel.app
 
-### 💻 Installation locale
+### 💻 Local Installation
 
-#### Prérequis
+#### Prerequisites
 
 - Node.js >= 18
 - npm >= 10
@@ -27,55 +27,55 @@ Créer un format de document :
 #### Installation
 
 ```bash
-# Cloner le repository
+# Clone the repository
 git clone https://github.com/Heako/opd-studio.git
 cd opd-studio
 
-# Installer les dépendances
+# Install dependencies
 npm install
 
-# Lancer opd-studio en développement
+# Run opd-studio in development mode
 npm run studio
 
-# Lancer opd-viewer en développement
+# Run opd-viewer in development mode
 npm run viewer
 
-# Build tous les packages
+# Build all packages
 npm run build
 
-# Tests
+# Run tests
 npm test
 ```
 
-## 📦 Structure du monorepo
+## 📦 Monorepo Structure
 
 ```
 opd-core/
 ├── apps/
-│   ├── opd-studio/       # Interface web (Next.js + React 18)
-│   └── opd-viewer/       # Visionneuse PWA
+│   ├── opd-studio/       # Web interface (Next.js + React 18)
+│   └── opd-viewer/       # PWA viewer
 ├── packages/
-│   ├── opd-spec/         # Spécification du format
-│   ├── opd-bridge-docx/  # Conversion DOCX → OPD
-│   ├── opd-semantic/     # Génération JSON-LD
-│   ├── opd-sign/         # Signature cryptographique
-│   └── opd-pack/         # CLI de packaging
+│   ├── opd-spec/         # Format specification
+│   ├── opd-bridge-docx/  # DOCX → OPD conversion
+│   ├── opd-semantic/     # JSON-LD generation
+│   ├── opd-sign/         # Cryptographic signatures
+│   └── opd-pack/         # Packaging CLI
 ├── tests/
-│   ├── golden/           # Fichiers de test de référence
-│   └── e2e/              # Tests end-to-end
+│   ├── golden/           # Reference test files
+│   └── e2e/              # End-to-end tests
 └── docs/                 # Documentation
 ```
 
-## ✨ Fonctionnalités actuelles (v0.1)
+## ✨ Current Features (v0.1)
 
-- ✅ **Conversion DOCX → OPD** avec préservation du style
-- ✅ **Génération CSS automatique** pour le rendu
-- ✅ **Signature cryptographique Ed25519** pour l'intégrité
-- ✅ **Métadonnées JSON-LD** (Schema.org)
-- ✅ **Prévisualisation** avant téléchargement
-- ✅ **Viewer avec vérification** de signature
-- ✅ **Interface drag & drop** responsive
-- ✅ **Documentation intégrée**
+- ✅ **DOCX → OPD conversion** with style preservation
+- ✅ **Automatic CSS generation** for rendering
+- ✅ **Ed25519 cryptographic signatures** for integrity
+- ✅ **JSON-LD metadata** (Schema.org)
+- ✅ **Preview** before download
+- ✅ **Viewer with signature verification**
+- ✅ **Responsive drag & drop interface**
+- ✅ **Integrated documentation**
 
 ## 🛠️ Technologies
 
@@ -91,29 +91,29 @@ opd-core/
 
 ## 📖 Documentation
 
-Voir le dossier [`docs/`](./docs/) pour :
+See the [`docs/`](./docs/) folder for:
 - [PRD](./docs/PRD.md) - Product Requirement Document
-- [ROADMAP](./docs/ROADMAP.md) - Feuille de route détaillée
-- [Architecture](./docs/architecture.md) - Architecture technique
+- [ROADMAP](./docs/ROADMAP.md) - Detailed roadmap
+- [Architecture](./docs/architecture.md) - Technical architecture
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-Les contributions sont les bienvenues ! Consultez [CONTRIBUTING.md](./CONTRIBUTING.md) pour commencer.
+Contributions are welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) to get started.
 
-## 📜 Licence
+## 📜 License
 
-**MIT License** - Voir [LICENSE](./LICENSE) pour plus de détails.
+**MIT License** - See [LICENSE](./LICENSE) for details.
 
-## 🔗 Liens
+## 🔗 Links
 
-- **Demo live** : https://opd-core-6ojjizaow-heakos-projects.vercel.app
-- **GitHub** : https://github.com/Heako/opd-studio
-- **Documentation** : [docs/](./docs/)
-- Site web : [openopd.org](https://openopd.org) (à venir)
+- **Live Demo**: https://opd-core-6ojjizaow-heakos-projects.vercel.app
+- **GitHub**: https://github.com/Heako/opd-studio
+- **Documentation**: [docs/](./docs/)
+- Website: [openopd.org](https://openopd.org) (coming soon)
 
 ---
 
-**Version actuelle** : v0.1.0 ✅ (Phase v0.1 terminée)
-**Statut** : 🟢 Prototype fonctionnel en production
-**Prochaine phase** : v0.3 - Viewer complet + Mode offline
+**Current Version**: v0.1.0 ✅ (Phase v0.1 completed)
+**Status**: 🟢 Functional prototype in production
+**Next Phase**: v0.3 - Complete viewer + Offline mode
 
