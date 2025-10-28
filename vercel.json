@@ -4,7 +4,6 @@
   "devCommand": "cd apps/opd-studio && npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "regions": ["iad1"],
-  "ignoreCommand": "if [ \"$VERCEL_ENV\" != \"production\" ]; then exit 1; fi"
+  "regions": ["iad1"]
 }
 
