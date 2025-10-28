@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm install && npm run build --filter=opd-studio",
+  "buildCommand": "npm run build:packages && cd apps/opd-studio && npm run build",
   "outputDirectory": "apps/opd-studio/.next",
   "devCommand": "cd apps/opd-studio && npm run dev",
   "installCommand": "npm install",
