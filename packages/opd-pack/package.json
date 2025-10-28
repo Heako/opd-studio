@@ -1,0 +1,31 @@
+{
+  "name": "@opd/opd-pack",
+  "version": "0.1.0",
+  "description": "Packaging et assemblage de documents OPD",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@opd/opd-sign": "*",
+    "fflate": "^0.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.2"
+  }
+}
+
