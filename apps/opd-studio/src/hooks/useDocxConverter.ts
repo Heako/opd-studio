@@ -12,7 +12,6 @@ export interface ConversionResult {
   metadata?: {
     title?: string;
     author?: string;
-    pages?: number;
   };
 }
 
@@ -69,7 +68,6 @@ export function useDocxConverter() {
         metadata: {
           title: metadata.title,
           author: metadata.author,
-          pages: metadata.pages,
         },
       };
     } catch (error) {
@@ -84,7 +82,7 @@ export function useDocxConverter() {
   };
 
   const downloadOpd = (data: Uint8Array, originalFilename: string) => {
-    const blob = new Blob([data], { type: "application/zip" });
+    const blob = new Blob([data as BlobPart], { type: "application/zip" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
