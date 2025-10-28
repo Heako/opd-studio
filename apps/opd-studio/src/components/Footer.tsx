@@ -11,7 +11,7 @@ export function Footer() {
           
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com/openopd/opd-core"
+              href="https://github.com/Heako/opd-studio"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-900 transition-colors"
@@ -25,7 +25,7 @@ export function Footer() {
               Documentation
             </a>
             <a
-              href="https://github.com/openopd/opd-core/blob/main/LICENSE"
+              href="https://github.com/Heako/opd-studio/blob/main/LICENSE"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-900 transition-colors"

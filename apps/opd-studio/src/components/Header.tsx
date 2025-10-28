@@ -17,7 +17,7 @@ export function Header() {
           
           <nav className="flex items-center gap-6">
             <a
-              href="https://github.com/openopd/opd-core"
+              href="https://github.com/Heako/opd-studio"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-gray-600 hover:text-gray-900 transition-colors"

@@ -4,10 +4,15 @@ Merci de votre intérêt pour contribuer à OPD Core ! 🎉
 
 ## 🚀 Démarrage
 
-1. **Fork** le projet
-2. **Clone** votre fork
-3. **Installez** les dépendances : `pnpm install`
+1. **Fork** le projet sur GitHub
+2. **Clone** votre fork :
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/opd-studio.git
+   cd opd-studio
+   ```
+3. **Installez** les dépendances : `npm install`
 4. **Créez** une branche : `git checkout -b feature/ma-fonctionnalite`
+5. **Lancez** le dev : `npm run studio` (port 3000) ou `npm run viewer` (port 3001)
 
 ## 📝 Conventions de code
 
@@ -31,15 +36,17 @@ chore: met à jour les dépendances
 
 ### Code Style
 
-- Utilisez Prettier pour le formatage : `pnpm format`
-- Respectez les règles ESLint : `pnpm lint`
+- Utilisez Prettier pour le formatage : `npm run format`
+- Respectez les règles ESLint : `npm run lint`
 - Pas de `console.log` dans le code de production
+- Utilisez React 18.2 (pas React 19) pour compatibilité Heroicons
 
 ## 🧪 Tests
 
 - Ajoutez des tests pour toute nouvelle fonctionnalité
-- Assurez-vous que tous les tests passent : `pnpm test`
+- Assurez-vous que tous les tests passent : `npm test`
 - Visez une couverture de code > 80%
+- Tests unitaires avec Vitest : `cd packages/opd-semantic && npm run test:watch`
 
 ## 📦 Structure des packages
 

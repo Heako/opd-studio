@@ -13,25 +13,38 @@ Créer un format de document :
 
 ## 🚀 Démarrage rapide
 
-### Prérequis
+### 🌐 Essayer en ligne
+
+**OPD Studio** (Convertisseur DOCX → OPD) : https://opd-core-6ojjizaow-heakos-projects.vercel.app
+
+### 💻 Installation locale
+
+#### Prérequis
 
 - Node.js >= 18
-- pnpm >= 8
+- npm >= 10
 
-### Installation
+#### Installation
 
 ```bash
-# Installer les dépendances
-pnpm install
+# Cloner le repository
+git clone https://github.com/Heako/opd-studio.git
+cd opd-studio
 
-# Lancer le mode développement
-pnpm dev
+# Installer les dépendances
+npm install
+
+# Lancer opd-studio en développement
+npm run studio
+
+# Lancer opd-viewer en développement
+npm run viewer
 
 # Build tous les packages
-pnpm build
+npm run build
 
 # Tests
-pnpm test
+npm test
 ```
 
 ## 📦 Structure du monorepo
@@ -53,15 +66,28 @@ opd-core/
 └── docs/                 # Documentation
 ```
 
+## ✨ Fonctionnalités actuelles (v0.1)
+
+- ✅ **Conversion DOCX → OPD** avec préservation du style
+- ✅ **Génération CSS automatique** pour le rendu
+- ✅ **Signature cryptographique Ed25519** pour l'intégrité
+- ✅ **Métadonnées JSON-LD** (Schema.org)
+- ✅ **Prévisualisation** avant téléchargement
+- ✅ **Viewer avec vérification** de signature
+- ✅ **Interface drag & drop** responsive
+- ✅ **Documentation intégrée**
+
 ## 🛠️ Technologies
 
-- **React 18** (compatible avec Heroicons)
-- **Next.js 14** (App Router)
-- **TypeScript 5**
-- **Turborepo** (monorepo)
-- **pnpm** (package manager)
+- **React 18.2** + **Next.js 14** (App Router)
+- **TypeScript 5.6**
+- **Turborepo 2.5** (monorepo build system)
+- **npm workspaces** (package manager)
 - **Tailwind CSS** (styling)
-- **Heroicons** (icônes)
+- **Heroicons** (icons)
+- **Mammoth.js** (DOCX parsing)
+- **jose** (Ed25519 signatures)
+- **fflate** (ZIP compression)
 
 ## 📖 Documentation
 
@@ -76,16 +102,18 @@ Les contributions sont les bienvenues ! Consultez [CONTRIBUTING.md](./CONTRIBUTI
 
 ## 📜 Licence
 
-- Core libs : **Apache 2.0**
-- Spécification : **CC-BY 4.0**
+**MIT License** - Voir [LICENSE](./LICENSE) pour plus de détails.
 
 ## 🔗 Liens
 
+- **Demo live** : https://opd-core-6ojjizaow-heakos-projects.vercel.app
+- **GitHub** : https://github.com/Heako/opd-studio
+- **Documentation** : [docs/](./docs/)
 - Site web : [openopd.org](https://openopd.org) (à venir)
-- GitHub : [github.com/openopd/opd-core](https://github.com/openopd/opd-core)
 
 ---
 
-**Version actuelle** : v0.1.0 (Prototype)  
-**Statut** : 🚧 En développement actif
+**Version actuelle** : v0.1.0 ✅ (Phase v0.1 terminée)
+**Statut** : 🟢 Prototype fonctionnel en production
+**Prochaine phase** : v0.3 - Viewer complet + Mode offline
 
