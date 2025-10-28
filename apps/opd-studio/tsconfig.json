@@ -20,7 +20,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@opd/opd-pack": ["../../packages/opd-pack/src"],
+      "@opd/opd-sign": ["../../packages/opd-sign/src"],
+      "@opd/opd-semantic": ["../../packages/opd-semantic/src"],
+      "@opd/opd-bridge-docx": ["../../packages/opd-bridge-docx/src"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
